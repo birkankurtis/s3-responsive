@@ -35,12 +35,13 @@ body {
 .menu-bg {
   background-color: #ededf9;
   border-bottom: 1px solid #e3e1f9;
-  font-size:0.25em;
+  font-size: 1rem;
 }
 
 .wrapper-centered {
   width: 800px;
   margin: 0 auto;
+  font-size:25%;
 }
 
 /* header alanı başlıyor */
@@ -62,7 +63,7 @@ nav {
   display: flex;
   gap: 15px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 0.75rem;
 }
 
 nav a {
@@ -90,14 +91,14 @@ nav a:hover {
 
 .hero h1 {
   margin: 0;
-  font-size: 40px;
   color: #70d000;
-  font-size: 2em;
+  font-size:2rem;
 }
 
 .hero p {
   margin: 5px 0 0 0;
   color: white;
+  font-size: 2rem;  ;
 }
 
 /* hero alanı bitti */
@@ -111,7 +112,7 @@ nav a:hover {
     padding: 20px 10px 15px 10px;
     font-size: 2em;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
   }
   .hero{
     margin:0;
@@ -121,15 +122,27 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: auto;
   }
-  .nav {
-    font-size: 0.75em;
+  nav {
+    font-size: 0.75rem;
     width: 100%;
-    height: 100hv;
+    height: 100vh;
+    flex: auto;
     align-items: center;
     justify-content: center;
   }
   .wrapper-centered{
     width: 100%;
+    flex: auto;
+  }
+  h1 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    flex: 1;
+    text-align: center;
   }
 }
