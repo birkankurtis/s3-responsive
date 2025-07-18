@@ -1,17 +1,17 @@
 /*
   YÖNERGELER
-  - Sayfa 480px ve daha küçük genişliğe sahip ekranlarda `responsive.jpg` dosyasındaki gibi görünmeli.
-  - Bu yüzden `Live Server` eklentisini kullan, yaptıklarını tasarımla kıyaslayarak ilerle.
+  - Sayfa 480px ve daha küçük genişliğe sahip ekranlarda `responsive.jpg` dosyasındaki gibi görünmeli. ok
+     - Bu yüzden `Live Server` eklentisini kullan, yaptıklarını tasarımla kıyaslayarak ilerle.
   - Bazı test direktiflerinin ipuçlarını `responsive.jpg` dosyasında bulacaksın.
 
   Mobil tasarımı uygularken ihtiyaç duyacağınız bazı sayısal değerler:
-  - Tüm sayfa yazı büyüklüğü: 16px
-  - `header` gap değeri: 15px,
-  - `header` padding değerleri: üstten 20px, yanlardan 10px, alttan 15px
+  - Tüm sayfa yazı büyüklüğü: 16px ok
+  - `header` gap değeri: 15px, ok
+  - `header` padding değerleri: üstten 20px, yanlardan 10px, alttan 15px ok
   - Menü linkleri parentının 25% 'i,
-  - `hero` üst boşluk: 0, köşe yuvarlaklığı: 0
-  - `hero` yükseklik: ekran yüksekliğinin 70% 'i
-  - `hero` iç boşluk: 10px
+   - `hero` üst boşluk: 0, köşe yuvarlaklığı: 0 ok
+  - `hero` yükseklik: ekran yüksekliğinin 70% 'i ok
+  - `hero` iç boşluk: 10px ok
 
   Ayrıca, `h1` ve `nav` elemanlaının yazı büyüklükleri de sayfanın genel yazı büyüklüğüne endekslenerek düzeltilmeli.
   - Başlığın yazı büyüklüğü dokümanın yazı büyüklüğünün 2 katı olmalı. 
@@ -97,3 +97,22 @@ nav a:hover {
 }
 
 /* hero alanı bitti */
+@media (max-width:480px){
+  html {
+    font-size: 16px;
+  }
+  header {
+    flex-direction: column;
+    gap:15px;
+    padding: 20px 10px 15px 10px;
+  }
+  .hero{
+    margin:0;
+    border-radius: 0;
+    height: 70vh;
+    padding:10px;
+  }
+  .nav {
+    font-size: 0.75rem;
+  }
+}
